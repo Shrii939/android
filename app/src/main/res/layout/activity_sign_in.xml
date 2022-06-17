@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SIGN IN ACTIVITY"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
+    android:textSize="30sp"
+    android:textColor="@color/design_default_color_error"
+    tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Enter UID"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="195dp"
+        android:layout_height="59dp"
+        android:gravity="center_horizontal"
+        android:onClick="signin"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
